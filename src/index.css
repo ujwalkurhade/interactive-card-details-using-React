@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+
+  /* // background-color: red; */
+}
+/* body {
+  display: flex;
+  align-items: center;
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 40vw 2500vh;
+  background-position: left;
+} */
+
+/* form */
+
+label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+input {
+  height: 35px;
+  width: 300px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+input:focus {
+  /* // border: 5px solid hsl(278, 94%, 30%); */
+  outline: 1px solid hsl(278, 94%, 30%);
+}
+input:invalid {
+  outline: 1px solid hsl(0, 100%, 66%);
+  color: hsl(0, 100%, 66%);
+}
+placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 1px;
+}
